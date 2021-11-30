@@ -1,8 +1,8 @@
 <?php
 $name = htmlentities($_POST['name']);
-$number = htmlentities(is_numeric($_POST['contact']));
+$number = htmlentities($_POST['contact']);
 $email = htmlentities($_POST['email']);
-if($name && $number && $email) {
+if($name && is_numeric($number) && $email) {
     echo "<script>
             $(\"#title-logon \").text(\"Welcome, $name\");
             </script>
