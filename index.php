@@ -25,6 +25,7 @@
         <script>
             function reset() {
                 $("#title-logon").text("Student Log In");
+                $("#logout").html("");
                 $("#app").html(`
                 <form action="" method="post" onsubmit="processdata(); return false;">
                 <input name="name" type="text" placeholder="name" class="input-b" id="name" required>
